@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleMate - Your AI Stylist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f8f8f8;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(90deg, #16a34a, #f97316);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 26px;
+      color: white;
+      margin: 0;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+    }
+    .hero {
+      background: #fff;
+      padding: 60px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      text-align: left;
+    }
+    .hero-content {
+      max-width: 500px;
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      background: #f97316;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      max-width: 250px;
+      flex: 1 1 200px;
+    }
+    .upload-form input, .upload-form button {
+      margin: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      width: 300px;
+    }
+    .video-section video {
+      max-width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .feature-images {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .feature-images img {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #1e293b;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>👕 StyleMate</h1>
+  <nav>
+    <a href="#how">How It Works</a>
+    <a href="#features">Features</a>
+    <a href="#upload">Try Now</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Your Personal AI Stylist – Effortless Outfits, Every Day!</h2>
+    <p>Get AI-powered outfit recommendations based on your style, occasion, and weather.</p>
+    <button>Get Started for Free</button>
+  </div>
+  <img src="https://t3.ftcdn.net/jpg/03/91/20/26/360_F_391202686_xG3fhgjJigKuqvCm36B7gMH5jfxhZLYM.jpg" alt="Outfit Preview" width="300" />
+</section>
+
+<section class="section" id="how">
+  <h2>How It Works</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Step 1</h3>
+      <p>Upload photos of your wardrobe (or sync from online stores).</p>
+    </div>
+    <div class="card">
+      <h3>Step 2</h3>
+      <p>AI suggests outfit combinations for any occasion.</p>
+    </div>
+    <div class="card">
+      <h3>Step 3</h3>
+      <p>Try them on virtually or shop missing items.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <h2>AI-Powered Features</h2>
+  <div class="cards">
+    <div class="card">
+      <h4>Smart Outfit Generator</h4>
+      <p>Daily outfit suggestions tailored to your preferences.</p>
+    </div>
+    <div class="card">
+      <h4>Weather-Based Styling</h4>
+      <p>Outfits adapt to local weather forecasts.</p>
+    </div>
+    <div class="card">
+      <h4>Virtual Try-On</h4>
+      <p>Augmented reality-based dressing experience.</p>
+    </div>
+    <div class="card">
+      <h4>Personalized Shopping</h4>
+      <p>AI recommends missing pieces to complete looks.</p>
+    </div>
+  </div>
+  <div class="feature-images">
+    <img src="https://www.shutterstock.com/image-illustration/clothes-on-sand-dune-background-600nw-2490651895.jpg" alt="Feature Image 1" />
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/015/801/517/small/creative-fashion-logo-design-gold-sign-with-lettering-and-hanger-symbol-metallic-logotype-calligraphy-in-line-art-style-isolated-on-purple-background-vector.jpg" alt="Feature Image 2" />
+  </div>
+</section>
+
+<section class="section video-section">
+  <h2>Watch How It Works</h2>
+  <video controls>
+    <source src="https://cdn.pixabay.com/vimeo/769693792/fashion-147179.mp4?width=640&hash=726cfe9c72a416ef178287f18b15844ae07b56ec" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<section class="section" id="upload">
+  <h2>Upload Your Wardrobe</h2>
+  <p>Upload wardrobe photos and enter your style needs:</p>
+  <form class="upload-form">
+    <input type="file" accept="image/*" multiple><br>
+    <input type="text" placeholder="e.g. Suggest an outfit for a wedding"><br>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 StyleMate. All rights reserved.</p>
+  <p><em>This page is fully AI-generated (content, code, and images).</em></p>
+</footer>
+
+</body>
+</html>
